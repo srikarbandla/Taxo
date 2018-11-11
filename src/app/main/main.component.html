@@ -1,0 +1,19 @@
+<div class="sidebar z-depth-1">
+	<a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+	<a href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a>
+	<a href="#clients"><i class="fa fa-fw fa-user"></i> Clients</a>
+	<a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+</div>
+<button mdbBtn color="primary" class="waves-light btn" type="button" (click)="test.toggle()" mdbWavesEffect>
+    Toggle collapse
+</button>
+<div class="main" mdbCollapse #test="bs-collapse">
+		<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="assets/verizon.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+</div>
